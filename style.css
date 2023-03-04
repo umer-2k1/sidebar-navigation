@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+}
+body{
+    font-family: 'Eczar', serif;
+    /* overflow-x: hidden; */
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+li, a{
+    font-size: 1.8rem;
+    color: black;
+    /* overflow-x: hidden; */
+}
+a{
+    text-decoration: none;
+}
+.fa-solid {
+    font-size: 3rem;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(247, 169, 69);
+}
+.logo {
+    margin-left: -25%;
+}
+.navbar{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.5s linear;
+}
+.nav-first{
+    width: 30%;
+    /* max-width: 520px;
+    min-width: 320px; */
+    background-color: #655DBB;
+}
+
+.nav-second{
+    width: 95%;
+    background-color: #3E54AC;
+}
+
+.nav-list{
+    width: 95%;
+    background-color: #ECF2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+.nav-list a{
+    font-size: 2.8rem;
+    transition: 0.1s all;
+}
+.nav-list a:hover{
+    color: #6b7280;
+}
+
+ul{
+    list-style-type: none;
+}
+.fa-square-xmark{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 4rem;
+
+}
+.active{
+    transform: translateX(0);
+}
